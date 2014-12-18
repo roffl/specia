@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 
 
+
     // $('.inner-menu').hide();
 
     // $(".pull-me").click( function (event) {
@@ -41,41 +42,79 @@ $(document).ready(function() {
                     //     $('.inner-menu[data-inner-menu!=' + linkCount + ']').slideUp('slow');
                     // }
 
-            $('[data-name="1"]').click(function() {
+
+                    // v1
+
+                // $(document).keypress(function(event){
+                //   if(event.keyCode == 13){
+                //     alert('hoh');
+                //   }
+                // });
+
+                    // v2
+               // $(document).on('keypress', function ( event ){
+                //     if(event.which === 13){
+                //         alert('hoh');
+                //     }
+                // });
+
+                    // v3
+                // $(document).fancybox({
+                //     beforeShow: function() {
+                //         $(document).keypress(function (event) {
+                //             if(event.which === 13){
+                //                 alert('hoh');
+                //             }
+                //         });
+                //     }
+                // });
+
+                // $('[data-name]').fancybox({
+                //     arrows: false
+
+                // });
+ 
+
+
+            // $('[data-name="1"]').click(function() {
+
+
+
+            //     $.fancybox.open([
+            //         {
+            //             href : 'img/img_page_2_nominant_4.jpg',                
+            //             title : '1st title'
+            //         },
+            //         {
+            //             href : 'img/img_page_2_nominant_3.jpg',                
+            //             title : '2nd title'
+            //         },
+            //         {
+            //             href : 'img/img_page_2_nominant_2.jpg',                
+            //             title : '3rd title'
+            //         },
+            //         {
+            //             href : 'img/img_page_2_nominant.jpg',                
+            //             title : '3rd title'
+            //         },
+            //         {
+            //             href : 'img/img_bg.jpg',                
+            //             title : '3rd title'
+            //         }
+            //     ], {
+            //         padding : 0,
+            //     });
 
 
 
 
-                $.fancybox.open([
-                    {
-                        href : 'img/img_page_2_nominant_4.jpg',                
-                        title : '1st title'
-                    },
-                    {
-                        href : 'img/img_page_2_nominant_3.jpg',                
-                        title : '2nd title'
-                    },
-                    {
-                        href : 'img/img_page_2_nominant_2.jpg',                
-                        title : '3rd title'
-                    },
-                    {
-                        href : 'img/img_page_2_nominant.jpg',                
-                        title : '3rd title'
-                    },
-                    {
-                        href : 'img/img_bg.jpg',                
-                        title : '3rd title'
-                    }
-                ], {
-                    padding : 0
-                });
+            //     return false;
                 
+            // });
 
 
-                return false;
-                
-            });
+
+
             $('[data-name="2"]').click(function() {
                 
                 $.fancybox.open([
@@ -197,6 +236,8 @@ $(document).ready(function() {
                     padding : 0
                 });
                 
+        
+
                 return false;
                 
             });
